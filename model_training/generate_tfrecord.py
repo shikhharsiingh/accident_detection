@@ -1,6 +1,5 @@
 """
 Usage:
-    # From tensorflow/models/
     # Create train data:
     python generate_tfrecord.py --csv_input=dat/train_labels.csv  --output_path=dat/train.record --image_dir=images/
     # Create test data:
@@ -27,7 +26,14 @@ FLAGS = flags.FLAGS
 
 
 # TO-DO replace this with label map
+# Do not use return value 0 as it is reserved for background by default
 def class_text_to_int(row_label):
+    # Add class names like if row_label = 'class1_name':
+    #                          return 1
+    #                      if row_label = 'class2_name':
+    #                          return 2
+    #                      else:
+    #                          return None
     if row_label == 'acc':
         return 1
     else:
