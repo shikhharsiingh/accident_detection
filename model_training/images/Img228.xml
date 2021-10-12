@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>Img228.jpg</filename>
+	<path>/Volumes/GoogleDrive/My Drive/Accident/accident_frames/train/Img228.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>acc</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>223</xmin>
+			<ymin>177</ymin>
+			<xmax>486</xmax>
+			<ymax>303</ymax>
+		</bndbox>
+	</object>
+</annotation>
