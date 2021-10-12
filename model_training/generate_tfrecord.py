@@ -1,10 +1,3 @@
-"""
-Usage:
-    # Create train data:
-    python generate_tfrecord.py --csv_input=dat/train_labels.csv  --output_path=dat/train.record --image_dir=images/
-    # Create test data:
-    python generate_tfrecord.py --csv_input=dat/test_labels.csv  --output_path=dat/test.record --image_dir=images/
-"""
 from __future__ import division
 from __future__ import print_function
 from __future__ import absolute_import
