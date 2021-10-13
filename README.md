@@ -62,7 +62,7 @@ root/<br/>
 
 > Open Terminal in Tensorflow directory and execute the following commands<br/>
 ~~~
- cd models
+ cd models/research
  protoc object_detection/protos/*.proto --python_out=.
  export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
  cp object_detection/packages/tf2/setup.py .
@@ -73,7 +73,7 @@ root/<br/>
 
 ### File configuration and execution
 Open generate_tfrecords.py<br/>
-Under class_text_to_int function add all your datasets classes with return values as the label mappings. Refer to the comments in the file.<br/><br/>
+Under <b>class_text_to_int</b> function add all your datasets classes with return values as the label mappings. Refer to the comments in the file.<br/><br/>
 
 > Now, open terminal in the directory containing generate_tfrecords.py and enter the following command  
 ~~~
