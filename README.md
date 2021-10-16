@@ -51,7 +51,7 @@ brew install protobuf
 ~~~  
   
 <b>On Linux,</b>  
-Execute the following command on terminal
+Execute the following command on a new terminal
 ~~~
 apt-get install protobuf-compiler
 ~~~
