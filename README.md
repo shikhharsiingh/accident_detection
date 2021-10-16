@@ -32,35 +32,32 @@ root/
 &nbsp;&nbsp;&nbsp;&nbsp;├─ models/<br/><br/>
 
 > Next, we will install Google protocol buffers  
-
-<b>Step3- </b>Visit https://github.com/protocolbuffers/protobuf/releases and choose the latest zip file from <b>Assets</b> based on your machine's configurations.  
-<b>Step4- </b>Extract the zip in your Tensorflow directory. I have renamed the directory as protoc.  
   
-The directory should look like -  
-  
-root/<br/>
-└─ images/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ train/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ test/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ Img1.jpg<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ Img1.xml<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ Img2.jpg<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ Img2.xml<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ ...<br/>
-└─ Tensorflow/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ models/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;├─ protoc/<br/><br/>
-<b>Step5: </b>  
 <b>On Windows,</b><br/>
-<b>S5.1- </b> Click on This PC(My Computer) > (Right click) Local Disk C > Properties. > Advanced System settings > Environment Variables > select Path > Edit...<br/>
-<b>S5.2- </b> Copy the path of the bin folder under in the protoc directory and add it to the paths. 
+<b>Step3.1- </b>Visit https://github.com/protocolbuffers/protobuf/releases and choose the latest zip file from <b>Assets</b> based on your machine's configurations.  
+<b>Step3.2- </b>Download and extract. Rename the extract folder to protoc.  
+<b>Step3.3- </b> Click on This PC(My Computer) > (Right click) Local Disk C > Properties. > Advanced System settings > Environment Variables > select Path > Edit...<br/>
+<b>Step3.4- </b> Copy the path of the bin folder under in the protoc directory and add it to the paths. 
 <br/>It would look like D: \<your_root_folder_path>\Tensorflow\protoc\bin<br/>
-<b>S5.3- </b> OK<br/><br/>
-<b>On Mac and Linux,</b><br/>
-<b>S5.1- </b> Copy protoc executable under bin<br/>
-<b>S5.2- </b> Paste it in /usr/local/bin/<br/><br/>
+<b>Step3.5- </b> OK<br/><br/>
+<b>On Mac,</b><br/>
+Open terminal and simply install protobuf using homebrew.  
+~~~
+brew install protobuf
+~~~
+*If you don't have homebrew installed on your machine. Execute the following command on a new terminal and then run the above command.*
+~~~
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+~~~
 
-> Open Terminal in Tensorflow directory and execute the following commands<br/>
+<b>On Linux,</b>  
+Execute the following command on terminal
+~~~
+apt-get install protobuf-compiler
+~~~
+> Next, we will compile to .proto files that will be used for the generation of the tfrecord files.
+   
+Open Terminal in Tensorflow directory and execute the following commands<br/>
 ~~~
  cd models/research
  protoc object_detection/protos/*.proto --python_out=.
