@@ -48,8 +48,8 @@ brew install protobuf
 *If you don't have homebrew installed on your machine. Execute the following command on a new terminal and then run the above command.*
 ~~~
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-~~~
-
+~~~  
+  
 <b>On Linux,</b>  
 Execute the following command on terminal
 ~~~
