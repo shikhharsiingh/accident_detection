@@ -55,7 +55,7 @@ Execute the following command on a new terminal
 ~~~
 apt-get install protobuf-compiler
 ~~~
-> Next, we will compile to .proto files that will be used for the generation of the tfrecord files.
+> Next, we will compile the .proto files that will be used for the generation of the tfrecord files.
    
 Open Terminal in Tensorflow directory and execute the following commands<br/>
 ~~~
