@@ -78,7 +78,7 @@ Open a new terminal
 cd model_training
 ~~~
 
-Now execute annotations.py
+Now execute <b>annotations.py</b>
 
 After a successful run of the file, you should see 2 success messages:  
 ~~~
@@ -87,15 +87,15 @@ Successfully created label maps
 ~~~
 and 3 new files viz.  
 * label_map.pbtxt  
-* train_labels.csv  
-* test_labels.csv 
+* test_labels.csv  
+* train_labels.csv 
  
 created in your dat directory.
 
 > Now, we are set to run generate_tfrecords.py  
 
 ### File configuration and execution
-Open generate_tfrecords.py<br/>
+Open <b>generate_tfrecords.py</b><br/>
 Under <b>class_text_to_int</b> function add all your datasets classes with return values as the label mappings. Refer to the comments in the file.<br/><br/>
 
 > Now, open terminal in the directory containing generate_tfrecords.py and enter the following command  
