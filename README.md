@@ -71,7 +71,7 @@ Open Terminal in Tensorflow directory and execute the following commands<br/>
 > Now, we will create the labels.csv files
 
 ### Labels csv generation
-<b>Note:</b> Make sure that you have split your xml files between your train and test folders in the images directory and created a dat directory in your model_trainig directory.
+<b>Note:</b> Make sure that you have split your xml files between your train and test folders in the images directory and created a dat directory in your model_training directory.
 
 Open a new terminal
 ~~~
