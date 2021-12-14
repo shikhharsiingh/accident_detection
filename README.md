@@ -14,9 +14,11 @@ You would need to install few dependencies on your machine for the generate_tfre
 > First, we will clone tensorflow model garden repository  
 
 <b>Step1- </b> Create a Tensorflow folder / directory in your root directory.  
-<b>Step2- </b> Open a terminal in this directory and run the following command-  
+<b>Step2- </b> Open a terminal in this directory and run the following command- 
+~~~
 git clone https://github.com/tensorflow/models  
-  
+~~~ 
+ 
 The directory should look like -  
   
 root/  
@@ -65,6 +67,30 @@ Open Terminal in Tensorflow directory and execute the following commands<br/>
  cp object_detection/packages/tf2/setup.py .
  python -m pip install .
 ~~~
+
+> Now, we will create the labels.csv files
+
+### Labels csv generation
+<b>Note:</b> Make sure that you have split your xml files between your train and test folders in the images directory and created a dat directory in your model_trainig directory.
+
+Open a new terminal
+~~~
+cd model_training
+~~~
+
+Now execute annotations.py
+
+After a successful run of the file, you should see 2 success messages:  
+~~~
+Succesfully converted xml to csv  
+Successfully created label maps  
+~~~
+and 3 new files viz.  
+* label_map.pbtxt  
+* train_labels.csv  
+* test_labels.csv 
+ 
+created in your dat directory.
 
 > Now, we are set to run generate_tfrecords.py  
 
